@@ -130,4 +130,6 @@ dmypy.json
 
 # Qt5
 **qt_for_python/*
-*__pycache__/*
+
+# pycache
+*__pycache__
