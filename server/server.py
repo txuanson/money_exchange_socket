@@ -3,11 +3,9 @@ from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtWidgets import QDialog, QApplication, QMessageBox
 from PyQt5.uic import loadUi
 import socket
-import threading
 import time
 import requests
 import json
-import datetime
 import sqlite3
 from uuid import uuid4
 
