@@ -269,7 +269,7 @@ class MainWindow(QDialog):
         self.shutdownBtn.clicked.connect(self.shutdown_server)
         self.server = Server(self)
         self.server.server_logger.connect(self.receive_log)
-        self.server.started.connect(lambda: self.receive_log(f'[STARTED]\t\tServer started at {HOST}'))
+        self.server.started.connect(lambda: self.receive_log(f'[STARTED]\t\tServer started at {HOST}:{PORT}'))
         self.server.finished.connect(lambda: self.receive_log('[STOPPED]\t\tServer stopped...'))
         self.crawler = Crawler(self)
         self.crawler.boardcast_signal.connect(self.boardcast)
